@@ -1,10 +1,10 @@
 /**
  * @since 2.2.0
  */
-import { Option } from 'fp-ts/lib/Option'
-import { ReadonlyRecord } from 'fp-ts/lib/ReadonlyRecord'
-import { At } from '..'
-import * as R from './Record'
+import { Option } from 'fp-ts/Option.ts'
+import { ReadonlyRecord } from 'fp-ts/ReadonlyRecord.ts'
+import { At } from '../index.ts'
+import * as R from './Record.ts'
 
 /**
  * @category constructor

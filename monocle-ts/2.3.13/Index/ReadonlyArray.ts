@@ -1,8 +1,8 @@
 /**
  * @since 2.2.0
  */
-import { Index } from '..'
-import * as A from './Array'
+import { Index } from '../index.ts'
+import * as A from './Array.ts'
 
 /**
  * @category constructor

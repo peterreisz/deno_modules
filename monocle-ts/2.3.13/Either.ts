@@ -1,9 +1,9 @@
 /**
  * @since 1.6.0
  */
-import { Either, right, left, fold } from 'fp-ts/lib/Either'
-import { fromEither, none, some } from 'fp-ts/lib/Option'
-import { Prism } from '.'
+import { Either, right, left, fold } from 'fp-ts/Either.ts'
+import { fromEither, none, some } from 'fp-ts/Option.ts'
+import { Prism } from './index.ts'
 
 const r = new Prism<Either<any, any>, any>(fromEither, right)
 

@@ -1,9 +1,9 @@
 /**
  * @since 1.2.0
  */
-import { At, Lens } from '..'
-import { Eq } from 'fp-ts/lib/Eq'
-import * as S from 'fp-ts/lib/Set'
+import { At, Lens } from '../index.ts'
+import { Eq } from 'fp-ts/Eq.ts'
+import * as S from 'fp-ts/Set.ts'
 
 /**
  * @category constructor

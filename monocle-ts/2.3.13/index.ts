@@ -1,22 +1,22 @@
 /**
  * @since 1.0.0
  */
-import * as A from 'fp-ts/lib/Array'
-import { getApplicative, make } from 'fp-ts/lib/Const'
-import { Foldable, Foldable1, Foldable2, Foldable3 } from 'fp-ts/lib/Foldable'
-import { constant, identity, Predicate, Refinement } from 'fp-ts/lib/function'
-import { HKT, Kind, Kind2, Kind3, URIS, URIS2, URIS3 } from 'fp-ts/lib/HKT'
-import { Monoid, monoidAll, monoidAny } from 'fp-ts/lib/Monoid'
-import { fromNullable, fromPredicate, getFirstMonoid, isNone, Option, option, some } from 'fp-ts/lib/Option'
-import { pipe } from 'fp-ts/lib/pipeable'
-import { Traversable, Traversable1, Traversable2, Traversable3 } from 'fp-ts/lib/Traversable'
-import * as at from './At'
-import * as iso from './Iso'
-import * as index from './Ix'
-import * as lens from './Lens'
-import * as optional from './Optional'
-import * as prism from './Prism'
-import * as traversal from './Traversal'
+import * as A from 'fp-ts/Array.ts'
+import { getApplicative, make } from 'fp-ts/Const.ts'
+import { Foldable, Foldable1, Foldable2, Foldable3 } from 'fp-ts/Foldable.ts'
+import { constant, identity, Predicate, Refinement } from 'fp-ts/function.ts'
+import { HKT, Kind, Kind2, Kind3, URIS, URIS2, URIS3 } from 'fp-ts/HKT.ts'
+import { Monoid, monoidAll, monoidAny } from 'fp-ts/Monoid.ts'
+import { fromNullable, fromPredicate, getFirstMonoid, isNone, Option, option, some } from 'fp-ts/Option.ts'
+import { pipe } from 'fp-ts/pipeable.ts'
+import { Traversable, Traversable1, Traversable2, Traversable3 } from 'fp-ts/Traversable.ts'
+import * as at from './At.ts'
+import * as iso from './Iso.ts'
+import * as index from './Ix.ts'
+import * as lens from './Lens.ts'
+import * as optional from './Optional.ts'
+import * as prism from './Prism.ts'
+import * as traversal from './Traversal.ts'
 
 export {
   /**
@@ -86,19 +86,19 @@ export class Iso<S, A> {
   /**
    * @since 1.0.0
    */
-  readonly unwrap = this.get
+  readonly unwrap = (s: S): A => this.get(s)
   /**
    * @since 1.0.0
    */
-  readonly to = this.get
+  readonly to = (s: S): A => this.get(s)
   /**
    * @since 1.0.0
    */
-  readonly wrap = this.reverseGet
+  readonly wrap = (a: A): S => this.reverseGet(a)
   /**
    * @since 1.0.0
    */
-  readonly from = this.reverseGet
+  readonly from = (a: A): S => this.reverseGet(a)
   constructor(readonly get: (s: S) => A, readonly reverseGet: (a: A) => S) {}
 
   /**

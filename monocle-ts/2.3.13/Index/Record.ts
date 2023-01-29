@@ -1,8 +1,8 @@
 /**
  * @since 1.7.0
  */
-import { Index } from '..'
-import { atRecord } from '../At/Record'
+import { Index } from '../index.ts'
+import { atRecord } from '../At/Record.ts'
 
 /**
  * @category constructor

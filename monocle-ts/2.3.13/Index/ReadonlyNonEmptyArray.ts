@@ -1,8 +1,8 @@
 /**
  * @since 2.2.0
  */
-import { Index } from '..'
-import * as NEA from './NonEmptyArray'
+import { Index } from '../index.ts'
+import * as NEA from './NonEmptyArray.ts'
 
 /**
  * @category model

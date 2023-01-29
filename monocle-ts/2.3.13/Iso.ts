@@ -14,23 +14,23 @@
  *
  * @since 2.3.0
  */
-import { Category2 } from 'fp-ts/lib/Category'
-import { Either } from 'fp-ts/lib/Either'
-import { flow, identity, Predicate, Refinement } from 'fp-ts/lib/function'
-import { Functor, Functor1, Functor2, Functor3 } from 'fp-ts/lib/Functor'
-import { HKT, Kind, Kind2, Kind3, URIS, URIS2, URIS3 } from 'fp-ts/lib/HKT'
-import { Invariant2 } from 'fp-ts/lib/Invariant'
-import { Option } from 'fp-ts/lib/Option'
-import { pipe } from 'fp-ts/lib/pipeable'
-import { ReadonlyNonEmptyArray } from 'fp-ts/lib/ReadonlyNonEmptyArray'
-import { ReadonlyRecord } from 'fp-ts/lib/ReadonlyRecord'
-import { Semigroupoid2 } from 'fp-ts/lib/Semigroupoid'
-import { Traversable1 } from 'fp-ts/lib/Traversable'
-import * as _ from './internal'
-import { Lens } from './Lens'
-import { Optional } from './Optional'
-import { Prism } from './Prism'
-import { Traversal } from './Traversal'
+import { Category2 } from 'fp-ts/Category.ts'
+import { Either } from 'fp-ts/Either.ts'
+import { flow, identity, Predicate, Refinement } from 'fp-ts/function.ts'
+import { Functor, Functor1, Functor2, Functor3 } from 'fp-ts/Functor.ts'
+import { HKT, Kind, Kind2, Kind3, URIS, URIS2, URIS3 } from 'fp-ts/HKT.ts'
+import { Invariant2 } from 'fp-ts/Invariant.ts'
+import { Option } from 'fp-ts/Option.ts'
+import { pipe } from 'fp-ts/pipeable.ts'
+import { ReadonlyNonEmptyArray } from 'fp-ts/ReadonlyNonEmptyArray.ts'
+import { ReadonlyRecord } from 'fp-ts/ReadonlyRecord.ts'
+import { Semigroupoid2 } from 'fp-ts/Semigroupoid.ts'
+import { Traversable1 } from 'fp-ts/Traversable.ts'
+import * as _ from './internal.ts'
+import { Lens } from './Lens.ts'
+import { Optional } from './Optional.ts'
+import { Prism } from './Prism.ts'
+import { Traversal } from './Traversal.ts'
 
 // -------------------------------------------------------------------------------------
 // model
@@ -370,7 +370,7 @@ export const URI = 'monocle-ts/Iso'
  */
 export type URI = typeof URI
 
-declare module 'fp-ts/lib/HKT' {
+declare global {
   interface URItoKind2<E, A> {
     readonly [URI]: Iso<E, A>
   }

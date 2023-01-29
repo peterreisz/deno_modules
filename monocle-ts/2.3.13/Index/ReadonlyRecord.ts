@@ -1,9 +1,9 @@
 /**
  * @since 2.2.0
  */
-import { ReadonlyRecord } from 'fp-ts/lib/ReadonlyRecord'
-import { Index } from '..'
-import * as R from './Record'
+import { ReadonlyRecord } from 'fp-ts/ReadonlyRecord.ts'
+import { Index } from '../index.ts'
+import * as R from './Record.ts'
 
 /**
  * @category constructor

@@ -1,9 +1,9 @@
 /**
  * @since 2.2.0
  */
-import { Eq } from 'fp-ts/lib/Eq'
-import { At } from '..'
-import * as S from './Set'
+import { Eq } from 'fp-ts/Eq.ts'
+import { At } from '../index.ts'
+import * as S from './Set.ts'
 
 /**
  * @category constructor

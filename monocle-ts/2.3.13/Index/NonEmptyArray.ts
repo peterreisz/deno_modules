@@ -1,10 +1,10 @@
 /**
  * @since 1.5.0
  */
-import { Index, Optional } from '..'
-import { NonEmptyArray, updateAt } from 'fp-ts/lib/NonEmptyArray'
-import { lookup } from 'fp-ts/lib/Array'
-import { isNone } from 'fp-ts/lib/Option'
+import { Index, Optional } from '../index.ts'
+import { NonEmptyArray, updateAt } from 'fp-ts/NonEmptyArray.ts'
+import { lookup } from 'fp-ts/Array.ts'
+import { isNone } from 'fp-ts/Option.ts'
 
 /**
  * @category constructor
