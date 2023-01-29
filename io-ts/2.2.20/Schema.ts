@@ -8,8 +8,8 @@
  *
  * @since 2.2.0
  */
-import { HKT, Kind, Kind2, URIS, URIS2 } from 'fp-ts/lib/HKT'
-import { memoize, Schemable, Schemable1, Schemable2C } from './Schemable'
+import { HKT, Kind, Kind2, URIS, URIS2 } from 'fp-ts/HKT.ts'
+import { memoize, Schemable, Schemable1, Schemable2C } from './Schemable.ts'
 
 // -------------------------------------------------------------------------------------
 // model

@@ -1,9 +1,9 @@
 /**
  * @since 1.0.0
  */
-import { Reporter } from './Reporter'
-import { Context, getFunctionName, ValidationError } from '.'
-import { fold } from 'fp-ts/lib/Either'
+import { Reporter } from './Reporter.ts'
+import { Context, getFunctionName, ValidationError } from './index.ts'
+import { fold } from 'fp-ts/Either.ts'
 
 function stringify(v: any): string {
   if (typeof v === 'function') {

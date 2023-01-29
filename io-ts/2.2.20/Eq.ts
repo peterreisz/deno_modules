@@ -8,11 +8,11 @@
  *
  * @since 2.2.2
  */
-import * as A from 'fp-ts/lib/Array'
-import * as E from 'fp-ts/lib/Eq'
-import { identity } from 'fp-ts/lib/function'
-import * as R from 'fp-ts/lib/Record'
-import { memoize, Schemable1, WithRefine1, WithUnknownContainers1 } from './Schemable'
+import * as A from 'fp-ts/Array.ts'
+import * as E from 'fp-ts/Eq.ts'
+import { identity } from 'fp-ts/function.ts'
+import * as R from 'fp-ts/Record.ts'
+import { memoize, Schemable1, WithRefine1, WithUnknownContainers1 } from './Schemable.ts'
 import Eq = E.Eq
 
 // -------------------------------------------------------------------------------------

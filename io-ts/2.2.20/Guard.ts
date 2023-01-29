@@ -8,9 +8,9 @@
  *
  * @since 2.2.0
  */
-import { identity, Refinement } from 'fp-ts/lib/function'
-import { pipe } from 'fp-ts/lib/pipeable'
-import * as S from './Schemable'
+import { identity, Refinement } from 'fp-ts/function.ts'
+import { pipe } from 'fp-ts/pipeable.ts'
+import * as S from './Schemable.ts'
 
 // -------------------------------------------------------------------------------------
 // model
@@ -308,7 +308,7 @@ export const URI = 'io-ts/Guard'
  */
 export type URI = typeof URI
 
-declare module 'fp-ts/lib/HKT' {
+declare global {
   interface URItoKind<A> {
     readonly [URI]: Guard<unknown, A>
   }

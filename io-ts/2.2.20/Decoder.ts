@@ -8,19 +8,19 @@
  *
  * @since 2.2.7
  */
-import { Alt2, Alt2C } from 'fp-ts/lib/Alt'
-import { Bifunctor2 } from 'fp-ts/lib/Bifunctor'
-import { Category2 } from 'fp-ts/lib/Category'
-import * as E from 'fp-ts/lib/Either'
-import { identity, Refinement } from 'fp-ts/lib/function'
-import { Functor2 } from 'fp-ts/lib/Functor'
-import { MonadThrow2C } from 'fp-ts/lib/MonadThrow'
-import { pipe } from 'fp-ts/lib/pipeable'
-import * as DE from './DecodeError'
-import * as FS from './FreeSemigroup'
-import * as G from './Guard'
-import * as K from './Kleisli'
-import * as S from './Schemable'
+import { Alt2, Alt2C } from 'fp-ts/Alt.ts'
+import { Bifunctor2 } from 'fp-ts/Bifunctor.ts'
+import { Category2 } from 'fp-ts/Category.ts'
+import * as E from 'fp-ts/Either.ts'
+import { identity, Refinement } from 'fp-ts/function.ts'
+import { Functor2 } from 'fp-ts/Functor.ts'
+import { MonadThrow2C } from 'fp-ts/MonadThrow.ts'
+import { pipe } from 'fp-ts/pipeable.ts'
+import * as DE from './DecodeError.ts'
+import * as FS from './FreeSemigroup.ts'
+import * as G from './Guard.ts'
+import * as K from './Kleisli.ts'
+import * as S from './Schemable.ts'
 
 // -------------------------------------------------------------------------------------
 // Kleisli config
@@ -442,7 +442,7 @@ export const URI = 'io-ts/Decoder'
  */
 export type URI = typeof URI
 
-declare module 'fp-ts/lib/HKT' {
+declare global {
   interface URItoKind2<E, A> {
     readonly [URI]: Decoder<E, A>
   }

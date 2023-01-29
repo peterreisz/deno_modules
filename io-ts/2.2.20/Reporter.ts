@@ -1,7 +1,7 @@
 /**
  * @since 1.0.0
  */
-import { Validation } from './index'
+import { Validation } from './index.ts'
 
 /**
  * @since 1.0.0

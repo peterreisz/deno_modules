@@ -8,12 +8,12 @@
  *
  * @since 2.2.3
  */
-import { identity, Refinement } from 'fp-ts/lib/function'
-import { Invariant3 } from 'fp-ts/lib/Invariant'
-import { pipe } from 'fp-ts/lib/pipeable'
-import * as D from './Decoder'
-import * as E from './Encoder'
-import * as S from './Schemable'
+import { identity, Refinement } from 'fp-ts/function.ts'
+import { Invariant3 } from 'fp-ts/Invariant.ts'
+import { pipe } from 'fp-ts/pipeable.ts'
+import * as D from './Decoder.ts'
+import * as E from './Encoder.ts'
+import * as S from './Schemable.ts'
 
 // -------------------------------------------------------------------------------------
 // model
@@ -352,7 +352,7 @@ export const URI = 'io-ts/Codec'
  */
 export type URI = typeof URI
 
-declare module 'fp-ts/lib/HKT' {
+declare global {
   interface URItoKind3<R, E, A> {
     readonly [URI]: Codec<R, E, A>
   }
