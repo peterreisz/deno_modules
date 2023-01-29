@@ -1,0 +1,14 @@
+{
+  "tasks": {
+    "patch": "deno run --allow-read=$PWD --allow-write=$PWD patch.ts",
+    "check": "deno check --all --import-map ./deno.jsonc **/*.ts"
+  },
+  "imports": {
+    "fp-ts": "./fp-ts/2.13.1/index.ts",
+    "fp-ts/": "./fp-ts/2.13.1/",
+    "io-ts": "./io-ts/2.2.20/index.ts",
+    "io-ts/": "./io-ts/2.2.20/",
+    "monocle-ts": "./io-ts/2.3.13/index.ts",
+    "monocle-ts/": "./io-ts/2.3.13/"
+  }
+}
