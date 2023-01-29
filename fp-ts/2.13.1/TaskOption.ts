@@ -1,51 +1,51 @@
 /**
  * @since 2.10.0
  */
-import { Alt1 } from './Alt'
-import { Alternative1 } from './Alternative'
-import { Applicative1 } from './Applicative'
-import { apFirst as apFirst_, Apply1, apS as apS_, apSecond as apSecond_ } from './Apply'
-import { bind as bind_, Chain1, chainFirst as chainFirst_ } from './Chain'
-import { compact as compact_, Compactable1, separate as separate_ } from './Compactable'
-import { Either } from './Either'
+import { Alt1 } from './Alt.ts'
+import { Alternative1 } from './Alternative.ts'
+import { Applicative1 } from './Applicative.ts'
+import { apFirst as apFirst_, Apply1, apS as apS_, apSecond as apSecond_ } from './Apply.ts'
+import { bind as bind_, Chain1, chainFirst as chainFirst_ } from './Chain.ts'
+import { compact as compact_, Compactable1, separate as separate_ } from './Compactable.ts'
+import { Either } from './Either.ts'
 import {
   filter as filter_,
   Filterable1,
   filterMap as filterMap_,
   partition as partition_,
   partitionMap as partitionMap_
-} from './Filterable'
+} from './Filterable.ts'
 import {
   chainEitherK as chainEitherK_,
   chainFirstEitherK as chainFirstEitherK_,
   FromEither1,
   fromEitherK as fromEitherK_
-} from './FromEither'
-import { chainFirstIOK as chainFirstIOK_, chainIOK as chainIOK_, FromIO1, fromIOK as fromIOK_ } from './FromIO'
+} from './FromEither.ts'
+import { chainFirstIOK as chainFirstIOK_, chainIOK as chainIOK_, FromIO1, fromIOK as fromIOK_ } from './FromIO.ts'
 import {
   chainFirstTaskK as chainFirstTaskK_,
   chainTaskK as chainTaskK_,
   FromTask1,
   fromTaskK as fromTaskK_
-} from './FromTask'
-import { flow, identity, Lazy, pipe, SK } from './function'
-import { bindTo as bindTo_, flap as flap_, Functor1, let as let__ } from './Functor'
-import * as _ from './internal'
-import { IO } from './IO'
-import { Monad1 } from './Monad'
-import { MonadIO1 } from './MonadIO'
-import { MonadTask1 } from './MonadTask'
-import { NonEmptyArray } from './NonEmptyArray'
-import * as O from './Option'
-import * as OT from './OptionT'
-import { Pointed1 } from './Pointed'
-import { Predicate } from './Predicate'
-import { ReadonlyNonEmptyArray } from './ReadonlyNonEmptyArray'
-import { Refinement } from './Refinement'
-import { Separated } from './Separated'
-import * as T from './Task'
-import { TaskEither } from './TaskEither'
-import { guard as guard_, Zero1 } from './Zero'
+} from './FromTask.ts'
+import { flow, identity, Lazy, pipe, SK } from './function.ts'
+import { bindTo as bindTo_, flap as flap_, Functor1, let as let__ } from './Functor.ts'
+import * as _ from './internal.ts'
+import { IO } from './IO.ts'
+import { Monad1 } from './Monad.ts'
+import { MonadIO1 } from './MonadIO.ts'
+import { MonadTask1 } from './MonadTask.ts'
+import { NonEmptyArray } from './NonEmptyArray.ts'
+import * as O from './Option.ts'
+import * as OT from './OptionT.ts'
+import { Pointed1 } from './Pointed.ts'
+import { Predicate } from './Predicate.ts'
+import { ReadonlyNonEmptyArray } from './ReadonlyNonEmptyArray.ts'
+import { Refinement } from './Refinement.ts'
+import { Separated } from './Separated.ts'
+import * as T from './Task.ts'
+import { TaskEither } from './TaskEither.ts'
+import { guard as guard_, Zero1 } from './Zero.ts'
 
 import Task = T.Task
 import Option = O.Option
@@ -406,7 +406,7 @@ export const URI = 'TaskOption'
  */
 export type URI = typeof URI
 
-declare module './HKT' {
+declare global {
   interface URItoKind<A> {
     readonly [URI]: TaskOption<A>
   }

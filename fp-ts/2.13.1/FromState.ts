@@ -3,11 +3,11 @@
  *
  * @since 2.11.0
  */
-import { Chain, Chain2, Chain3, Chain4 } from './Chain'
-import { Endomorphism } from './Endomorphism'
-import { flow } from './function'
-import { HKT2, Kind2, Kind3, Kind4, URIS2, URIS3, URIS4 } from './HKT'
-import * as S from './State'
+import { Chain, Chain2, Chain3, Chain4 } from './Chain.ts'
+import { Endomorphism } from './Endomorphism.ts'
+import { flow } from './function.ts'
+import { HKT2, Kind2, Kind3, Kind4, URIS2, URIS3, URIS4 } from './HKT.ts'
+import * as S from './State.ts'
 
 import State = S.State
 

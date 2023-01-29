@@ -1,10 +1,10 @@
 /**
  * @since 2.13.0
  */
-import { Applicative2 } from './Applicative'
-import { apFirst as apFirst_, Apply2, apS as apS_, apSecond as apSecond_ } from './Apply'
-import { bind as bind_, Chain2, chainFirst as chainFirst_ } from './Chain'
-import { chainFirstIOK as chainFirstIOK_, chainIOK as chainIOK_, FromIO2, fromIOK as fromIOK_ } from './FromIO'
+import { Applicative2 } from './Applicative.ts'
+import { apFirst as apFirst_, Apply2, apS as apS_, apSecond as apSecond_ } from './Apply.ts'
+import { bind as bind_, Chain2, chainFirst as chainFirst_ } from './Chain.ts'
+import { chainFirstIOK as chainFirstIOK_, chainIOK as chainIOK_, FromIO2, fromIOK as fromIOK_ } from './FromIO.ts'
 import {
   ask as ask_,
   asks as asks_,
@@ -12,19 +12,19 @@ import {
   chainReaderK as chainReaderK_,
   FromReader2,
   fromReaderK as fromReaderK_
-} from './FromReader'
-import { flow, identity, pipe, SK } from './function'
-import { bindTo as bindTo_, flap as flap_, Functor2 } from './Functor'
-import * as _ from './internal'
-import * as I from './IO'
-import { Monad2 } from './Monad'
-import { MonadIO2 } from './MonadIO'
-import { Pointed2 } from './Pointed'
-import * as R from './Reader'
-import { Reader } from './Reader'
-import { IO } from './IO'
-import * as RT from './ReaderT'
-import { ReadonlyNonEmptyArray } from './ReadonlyNonEmptyArray'
+} from './FromReader.ts'
+import { flow, identity, pipe, SK } from './function.ts'
+import { bindTo as bindTo_, flap as flap_, Functor2 } from './Functor.ts'
+import * as _ from './internal.ts'
+import * as I from './IO.ts'
+import { Monad2 } from './Monad.ts'
+import { MonadIO2 } from './MonadIO.ts'
+import { Pointed2 } from './Pointed.ts'
+import * as R from './Reader.ts'
+import { Reader } from './Reader.ts'
+import { IO } from './IO.ts'
+import * as RT from './ReaderT.ts'
+import { ReadonlyNonEmptyArray } from './ReadonlyNonEmptyArray.ts'
 
 /**
  * @category model
@@ -165,7 +165,7 @@ export const URI = 'ReaderIO'
  */
 export type URI = typeof URI
 
-declare module './HKT' {
+declare global {
   interface URItoKind2<E, A> {
     readonly [URI]: ReaderIO<E, A>
   }

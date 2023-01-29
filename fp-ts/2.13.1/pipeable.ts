@@ -1,7 +1,7 @@
 /**
  * @since 2.0.0
  */
-import { Alt, Alt1, Alt2, Alt2C, Alt3, Alt3C, Alt4 } from './Alt'
+import { Alt, Alt1, Alt2, Alt2C, Alt3, Alt3C, Alt4 } from './Alt.ts'
 import {
   Apply,
   Apply1,
@@ -12,9 +12,9 @@ import {
   Apply4,
   apFirst as apFirst_,
   apSecond as apSecond_
-} from './Apply'
-import { Bifunctor, Bifunctor2, Bifunctor2C, Bifunctor3, Bifunctor3C, Bifunctor4 } from './Bifunctor'
-import { Chain, Chain1, Chain2, Chain2C, Chain3, Chain3C, Chain4, chainFirst as chainFirst_ } from './Chain'
+} from './Apply.ts'
+import { Bifunctor, Bifunctor2, Bifunctor2C, Bifunctor3, Bifunctor3C, Bifunctor4 } from './Bifunctor.ts'
+import { Chain, Chain1, Chain2, Chain2C, Chain3, Chain3C, Chain4, chainFirst as chainFirst_ } from './Chain.ts'
 import {
   Compactable,
   Compactable1,
@@ -23,8 +23,8 @@ import {
   Compactable3,
   Compactable3C,
   Compactable4
-} from './Compactable'
-import { Separated } from './Separated'
+} from './Compactable.ts'
+import { Separated } from './Separated.ts'
 import {
   Contravariant,
   Contravariant1,
@@ -33,9 +33,9 @@ import {
   Contravariant3,
   Contravariant3C,
   Contravariant4
-} from './Contravariant'
-import { Either } from './Either'
-import { Extend, Extend1, Extend2, Extend2C, Extend3, Extend3C, Extend4 } from './Extend'
+} from './Contravariant.ts'
+import { Either } from './Either.ts'
+import { Extend, Extend1, Extend2, Extend2C, Extend3, Extend3C, Extend4 } from './Extend.ts'
 import {
   Filterable,
   Filterable1,
@@ -44,7 +44,7 @@ import {
   Filterable3,
   Filterable3C,
   Filterable4
-} from './Filterable'
+} from './Filterable.ts'
 import {
   FilterableWithIndex,
   FilterableWithIndex1,
@@ -55,8 +55,8 @@ import {
   FilterableWithIndex4,
   PredicateWithIndex,
   RefinementWithIndex
-} from './FilterableWithIndex'
-import { Foldable, Foldable1, Foldable2, Foldable2C, Foldable3, Foldable3C, Foldable4 } from './Foldable'
+} from './FilterableWithIndex.ts'
+import { Foldable, Foldable1, Foldable2, Foldable2C, Foldable3, Foldable3C, Foldable4 } from './Foldable.ts'
 import {
   FoldableWithIndex,
   FoldableWithIndex1,
@@ -65,11 +65,11 @@ import {
   FoldableWithIndex3,
   FoldableWithIndex3C,
   FoldableWithIndex4
-} from './FoldableWithIndex'
-import { identity, Lazy, pipe as pipeFromFunctionModule } from './function'
-import { Predicate } from './Predicate'
-import { Refinement } from './Refinement'
-import { Functor, Functor1, Functor2, Functor2C, Functor3, Functor3C, Functor4 } from './Functor'
+} from './FoldableWithIndex.ts'
+import { identity, Lazy, pipe as pipeFromFunctionModule } from './function.ts'
+import { Predicate } from './Predicate.ts'
+import { Refinement } from './Refinement.ts'
+import { Functor, Functor1, Functor2, Functor2C, Functor3, Functor3C, Functor4 } from './Functor.ts'
 import {
   FunctorWithIndex,
   FunctorWithIndex1,
@@ -78,8 +78,8 @@ import {
   FunctorWithIndex3,
   FunctorWithIndex3C,
   FunctorWithIndex4
-} from './FunctorWithIndex'
-import { HKT, HKT2, Kind, Kind2, Kind3, Kind4, URIS, URIS2, URIS3, URIS4 } from './HKT'
+} from './FunctorWithIndex.ts'
+import { HKT, HKT2, Kind, Kind2, Kind3, Kind4, URIS, URIS2, URIS3, URIS4 } from './HKT.ts'
 import {
   MonadThrow,
   MonadThrow1,
@@ -88,10 +88,10 @@ import {
   MonadThrow3,
   MonadThrow3C,
   MonadThrow4
-} from './MonadThrow'
-import { Monoid } from './Monoid'
-import { Option } from './Option'
-import { Profunctor, Profunctor2, Profunctor2C, Profunctor3, Profunctor3C, Profunctor4 } from './Profunctor'
+} from './MonadThrow.ts'
+import { Monoid } from './Monoid.ts'
+import { Option } from './Option.ts'
+import { Profunctor, Profunctor2, Profunctor2C, Profunctor3, Profunctor3C, Profunctor4 } from './Profunctor.ts'
 import {
   Semigroupoid,
   Semigroupoid2,
@@ -99,7 +99,7 @@ import {
   Semigroupoid3,
   Semigroupoid3C,
   Semigroupoid4
-} from './Semigroupoid'
+} from './Semigroupoid.ts'
 
 // -------------------------------------------------------------------------------------
 // pipeable helpers

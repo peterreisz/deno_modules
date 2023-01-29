@@ -38,7 +38,8 @@ export interface HKT4<URI, S, R, E, A> extends HKT3<URI, R, E, A> {
 }
 
 //
-// inj: type-level dictionaries for HKTs: URI -> concrete type
+declare global {
+//  inj: type-level dictionaries for HKTs: URI -> concrete type
 //
 
 /**
@@ -70,7 +71,8 @@ export interface URItoKind3<R, E, A> {}
 export interface URItoKind4<S, R, E, A> {}
 
 //
-// unions of URIs
+}
+//  unions of URIs
 //
 
 /**
