@@ -4,11 +4,11 @@
     "check": "deno check --all --import-map ./deno.jsonc **/*.ts"
   },
   "imports": {
-    "fp-ts": "./fp-ts/2.13.1/index.ts",
-    "fp-ts/": "./fp-ts/2.13.1/",
-    "io-ts": "./io-ts/2.2.20/index.ts",
-    "io-ts/": "./io-ts/2.2.20/",
-    "monocle-ts": "./io-ts/2.3.13/index.ts",
-    "monocle-ts/": "./io-ts/2.3.13/"
+    "fp-ts": "./gcanti/fp-ts/2.13.1/index.ts",
+    "fp-ts/": "./gcanti/fp-ts/2.13.1/",
+    "io-ts": "./gcanti/io-ts/2.2.20/index.ts",
+    "io-ts/": "./gcanti/io-ts/2.2.20/",
+    "monocle-ts": "./gcanti/io-ts/2.3.13/index.ts",
+    "monocle-ts/": "./gcanti/io-ts/2.3.13/"
   }
 }
